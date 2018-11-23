@@ -2,7 +2,7 @@ package com.axonactive.cdi.demo.service;
 
 import javax.inject.Inject;
 
-import com.axonactive.cdi.demo.model.LogConfiguration;
+import com.axonactive.cdi.demo.bean.LogConfiguration;
 
 public class SpecialLogger {
 	

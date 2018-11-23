@@ -1,4 +1,4 @@
-package com.axonactive.cdi.demo.model;
+package com.axonactive.cdi.demo.bean;
 
 import javax.inject.Inject;
 

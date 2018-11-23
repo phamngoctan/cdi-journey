@@ -3,7 +3,7 @@ package com.axonactive.cdi.demo.main;
 import org.jboss.weld.environment.se.Weld;
 import org.jboss.weld.environment.se.WeldContainer;
 
-import com.axonactive.cdi.demo.model.Checkout;
+import com.axonactive.cdi.demo.bean.Checkout;
 
 public class MainApplication {
 
