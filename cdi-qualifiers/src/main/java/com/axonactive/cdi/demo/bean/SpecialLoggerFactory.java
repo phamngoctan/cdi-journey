@@ -6,10 +6,10 @@ import com.axonactive.cdi.demo.service.SpecialLogger;
 
 public class SpecialLoggerFactory {
 	
-	@Produces
-	public SpecialLogger createLogger() {
-        LogConfiguration logInDebugMode = new LogConfiguration(true, false);
-        return new SpecialLogger(logInDebugMode);
-    }
+//	@Produces
+//	public SpecialLogger createLogger() {
+//        LogConfiguration logInDebugMode = new LogConfiguration(true, false);
+//        return new SpecialLogger(logInDebugMode);
+//    }
 	
 }

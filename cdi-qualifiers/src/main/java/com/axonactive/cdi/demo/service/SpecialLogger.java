@@ -9,9 +9,9 @@ public class SpecialLogger {
 	@Inject
 	private LogConfiguration configuration;
 
-	public SpecialLogger(LogConfiguration configuration) {
-		this.configuration = configuration;
-	}
+//	public SpecialLogger(LogConfiguration configuration) {
+//		this.configuration = configuration;
+//	}
 
 	public void log(String message) {
 		if (configuration.isInDebugMode()) {
