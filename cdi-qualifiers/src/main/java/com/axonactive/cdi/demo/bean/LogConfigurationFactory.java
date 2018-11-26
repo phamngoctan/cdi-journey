@@ -1,5 +1,6 @@
 package com.axonactive.cdi.demo.bean;
 
+import javax.enterprise.inject.Default;
 import javax.enterprise.inject.Produces;
 
 public class LogConfigurationFactory {
@@ -12,6 +13,7 @@ public class LogConfigurationFactory {
     }
 	
 	@Produces
+	@Default
 	public LogConfiguration createInfoLogger() {
  
         return new LogConfiguration(true, false);
