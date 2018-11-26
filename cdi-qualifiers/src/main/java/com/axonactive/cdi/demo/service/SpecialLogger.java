@@ -1,16 +1,17 @@
 package com.axonactive.cdi.demo.service;
 
-import javax.enterprise.inject.Default;
 import javax.inject.Inject;
 
-import com.axonactive.cdi.demo.bean.DebugMode;
 import com.axonactive.cdi.demo.bean.LogConfiguration;
+import com.axonactive.cdi.demo.bean.LoggerMode;
+import com.axonactive.cdi.demo.bean.Mode;
 
 public class SpecialLogger {
 	
 	@Inject
 //	@Default
-	@DebugMode
+//  @DebugMode
+	@LoggerMode(desiredMode = Mode.WARN)
 	private LogConfiguration configuration;
 
 //	public SpecialLogger(LogConfiguration configuration) {

@@ -5,21 +5,21 @@ import javax.enterprise.inject.Produces;
 public class LogConfigurationFactory {
 
 	@Produces
-	@DebugMode
+	@LoggerMode(desiredMode = Mode.DEBUG)
 	public LogConfiguration createDebugLogger() {
  
         return new LogConfiguration(false, true, false);
     }
 	
 	@Produces
-	@InfoMode
+	@LoggerMode(desiredMode = Mode.INFO)
 	public LogConfiguration createInfoLogger() {
  
         return new LogConfiguration(true, false, false);
     }
 	
 	@Produces
-	@WarnMode
+	@LoggerMode(desiredMode = Mode.WARN)
 	public LogConfiguration createWarnLogger() {
  
         return new LogConfiguration(false, false, true);

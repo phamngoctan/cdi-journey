@@ -9,7 +9,7 @@ import javax.inject.Qualifier;
 
 @Qualifier
 @Retention(RetentionPolicy.RUNTIME)
-@Target({ ElementType.METHOD, ElementType.FIELD })
-public @interface DebugMode {
-
+@Target({ElementType.METHOD, ElementType.FIELD})
+public @interface LoggerMode {
+	Mode desiredMode();
 }
