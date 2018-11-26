@@ -5,9 +5,15 @@ import javax.enterprise.inject.Produces;
 public class LogConfigurationFactory {
 
 	@Produces
-	public LogConfiguration createLogger() {
+	public LogConfiguration createDebugLogger() {
  
         return new LogConfiguration(false, true);
+    }
+	
+	@Produces
+	public LogConfiguration createInfoLogger() {
+ 
+        return new LogConfiguration(true, false);
     }
 
 }
