@@ -22,6 +22,8 @@ public class SpecialLogger {
 			System.out.println("DEBUG LOG: " + message);
 		} else if (configuration.isInInfoMode()) {
 			System.out.println("INFO LOG: " + message);
+		} else if (configuration.isInWarnMode()) {
+			System.out.println("WARN LOG: " + message);
 		} else {
 			System.out.println("DEFAULT LOG: " + message);
 		}
