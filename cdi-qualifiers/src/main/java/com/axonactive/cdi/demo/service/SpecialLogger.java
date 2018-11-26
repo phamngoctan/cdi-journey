@@ -1,5 +1,6 @@
 package com.axonactive.cdi.demo.service;
 
+import javax.enterprise.inject.Default;
 import javax.inject.Inject;
 
 import com.axonactive.cdi.demo.bean.LogConfiguration;
@@ -7,6 +8,7 @@ import com.axonactive.cdi.demo.bean.LogConfiguration;
 public class SpecialLogger {
 	
 	@Inject
+	@Default
 	private LogConfiguration configuration;
 
 //	public SpecialLogger(LogConfiguration configuration) {

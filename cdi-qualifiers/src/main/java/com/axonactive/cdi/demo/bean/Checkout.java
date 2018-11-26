@@ -8,7 +8,6 @@ import com.axonactive.cdi.demo.service.SpecialLogger;
 public class Checkout {
 	
 	@Inject
-	@Default
 	private SpecialLogger logger;
 	 
     public void finishCheckout() {
