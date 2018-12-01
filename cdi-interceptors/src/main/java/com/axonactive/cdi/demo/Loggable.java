@@ -13,7 +13,7 @@ import javax.interceptor.InterceptorBinding;
 @Target({ElementType.TYPE, ElementType.METHOD})
 public @interface Loggable {
  
-//    @Nonbinding String message() default "Logging";
-    String message() default "Logging";
+    @Nonbinding String message() default "Logging";
+//    String message() default "Logging";
  
 }
