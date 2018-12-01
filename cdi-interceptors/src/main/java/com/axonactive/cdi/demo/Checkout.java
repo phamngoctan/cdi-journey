@@ -7,12 +7,13 @@ public class Checkout {
 //	@Inject
 //    private Auditor auditor;
  
-    @Inject
-    private MyLogger logger;
+//    @Inject
+//    private MyLogger logger;
  
     @Auditable
+    @Loggable(message = "Finishing Checkout")
     public void finishCheckout() {
-        logger.log("Finishing Checkout");
+//        logger.log("Finishing Checkout");
  
 //        auditor.audit();
     }

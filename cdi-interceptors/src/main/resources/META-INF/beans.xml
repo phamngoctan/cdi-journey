@@ -7,6 +7,7 @@
 
 	<interceptors>
         <class>com.axonactive.cdi.demo.AuditorInterceptor</class>
+        <class>com.axonactive.cdi.demo.LoggerInterceptor</class>
     </interceptors>
 
 </beans>
