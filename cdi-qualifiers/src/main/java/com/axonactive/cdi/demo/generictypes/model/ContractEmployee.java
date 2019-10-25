@@ -3,7 +3,7 @@ package com.axonactive.cdi.demo.generictypes.model;
 import java.io.Serializable;
 import java.time.LocalDate;
 
-public class ContractEmployee implements Serializable {
+public abstract class ContractEmployee implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	private Long id;
@@ -34,6 +34,6 @@ public class ContractEmployee implements Serializable {
 		this.createdDate = createdDate;
 	}
 	
-//	public abstract String getSpecialTreatment();
+	public abstract String getSpecialTreatment();
 	
 }

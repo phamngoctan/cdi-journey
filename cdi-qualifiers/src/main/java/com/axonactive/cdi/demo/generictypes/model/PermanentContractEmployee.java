@@ -12,7 +12,7 @@ public class PermanentContractEmployee extends ContractEmployee {
 		this.permanentSpecialTreatment = permanentSpecialTreatment;
 	}
 
-//	@Override
+	@Override
 	public String getSpecialTreatment() {
 		return permanentSpecialTreatment;
 	}

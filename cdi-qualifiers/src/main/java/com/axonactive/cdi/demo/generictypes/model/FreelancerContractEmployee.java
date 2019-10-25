@@ -12,7 +12,7 @@ public class FreelancerContractEmployee extends ContractEmployee {
 		this.freelancerSpecialTreatment = freelancerSpecialTreatment;
 	}
 
-//	@Override
+	@Override
 	public String getSpecialTreatment() {
 		return freelancerSpecialTreatment;
 	}

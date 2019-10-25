@@ -13,7 +13,7 @@ public class LongTermContractEmployee extends ContractEmployee {
 		this.longtermSpecialTreatment = longtermSpecialTreatment;
 	}
 
-//	@Override
+	@Override
 	public String getSpecialTreatment() {
 		return longtermSpecialTreatment;
 	}

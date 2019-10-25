@@ -10,6 +10,7 @@ import com.axonactive.cdi.demo.generictypes.model.ContractEmployee;
 import com.axonactive.cdi.demo.generictypes.model.EmployeeType;
 
 //TODO: make the communication service with multple implementations
+// With this approach, each type will have different special treatment text
 public class AbstractEmployeeContractDatabaseCommunicationService<E extends ContractEmployeeEntity, M extends ContractEmployee> {
 	
 	public List<E> getEmployeeContractEntities() {
