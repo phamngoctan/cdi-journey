@@ -12,19 +12,20 @@ import org.junit.Test;
 
 import com.axonactive.cdi.demo.generictypes.model.Employee;
 import com.axonactive.cdi.demo.generictypes.model.EmployeeType;
+import com.axonactive.cdi.demo.generictypes.model.LongTermContractEmployee;
 
 public class CdiGenericTypeTest {
 	
 	private static WeldContainer container;
-//	@BeforeClass
-//	public static void init() {
-//		container = new Weld().initialize();
-//	}
-//	
-//	@AfterClass
-//	public static void close() {
-//		container.shutdown();
-//	}
+	@BeforeClass
+	public static void init() {
+		container = new Weld().initialize();
+	}
+	
+	@AfterClass
+	public static void close() {
+		container.shutdown();
+	}
 	
 	@Test
 	public void autoPickInstanceOfGenericType() {
@@ -33,18 +34,20 @@ public class CdiGenericTypeTest {
 		 * @Inject
 		   private EmployeeService employee;
 		 */
-		WeldContainer container = new Weld().initialize();
+//		WeldContainer container = new Weld().initialize();
 		EmployeeService employee = container.select(EmployeeService.class).get();
 		Employee longtermEmployee = employee.maintainEmployee(EmployeeType.LONGTERM);
 		assertThat(longtermEmployee, notNullValue());
 		assertThat(longtermEmployee.getType(), equalTo(EmployeeType.LONGTERM));
-		container.shutdown();
+		assertThat(longtermEmployee.getContracts().size(), equalTo(1));
+		assertThat(longtermEmployee.getContracts().get(0) instanceof LongTermContractEmployee, equalTo(true));
+//		container.shutdown();
 	}
 	
-//	@Test(expected = NullPointerException.class)
-//	public void autoPickInstanceOfGenericType_errorCase() {
-//		EmployeeService employee = container.select(EmployeeService.class).get();
-//		employee.maintainEmployee(EmployeeType.FREELANCER);
-//	}
+	@Test(expected = NullPointerException.class)
+	public void autoPickInstanceOfGenericType_errorCase() {
+		EmployeeService employee = container.select(EmployeeService.class).get();
+		employee.maintainEmployee(EmployeeType.FREELANCER);
+	}
 	
 }
