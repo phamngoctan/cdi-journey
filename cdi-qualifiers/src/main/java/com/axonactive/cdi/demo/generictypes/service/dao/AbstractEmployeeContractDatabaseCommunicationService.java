@@ -9,6 +9,7 @@ import com.axonactive.cdi.demo.generictypes.entity.ContractEmployeeEntity;
 import com.axonactive.cdi.demo.generictypes.model.ContractEmployee;
 import com.axonactive.cdi.demo.generictypes.model.EmployeeType;
 
+//TODO: make the communication service with multple implementations
 public class AbstractEmployeeContractDatabaseCommunicationService<E extends ContractEmployeeEntity, M extends ContractEmployee> {
 	
 	public List<E> getEmployeeContractEntities() {
