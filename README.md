@@ -1,1 +1,2 @@
 # cdi-journey
+This repository just plays around with weld container in SE environment. Please refer to this repository https://github.com/phamngoctan/javaee-playground and go to the cdi-playground for the Java EE version.
