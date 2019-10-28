@@ -4,5 +4,6 @@ public interface Employee {
 
 	public Long getId();
 	public String getName();
+	public ResponseType getResponseType();
 
 }

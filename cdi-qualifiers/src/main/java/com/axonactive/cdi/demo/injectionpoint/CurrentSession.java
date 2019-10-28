@@ -11,5 +11,5 @@ import javax.inject.Qualifier;
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ ElementType.FIELD, ElementType.TYPE, ElementType.METHOD })
 public @interface CurrentSession {
-
+	ResponseType responseType() default ResponseType.JSON;
 }

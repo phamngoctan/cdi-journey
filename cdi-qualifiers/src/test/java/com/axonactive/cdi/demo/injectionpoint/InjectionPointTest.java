@@ -46,6 +46,7 @@ public class InjectionPointTest {
 		assertThat(employeeInCurrentSession, notNullValue());
 		assertThat(employeeInCurrentSession.getId(), equalTo(1L));
 		assertThat(employeeInCurrentSession.getName(), equalTo("Tan Pham"));
+		assertThat(employeeInCurrentSession.getResponseType(), equalTo(ResponseType.JSON));
 	}
 	
 }
