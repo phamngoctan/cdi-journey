@@ -34,7 +34,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>luz_accounting</finalName>
+		<finalName>cdi_alternatives</finalName>
 		<directory>${project.basedir}/target</directory>
 		<plugins>
 			<plugin>
