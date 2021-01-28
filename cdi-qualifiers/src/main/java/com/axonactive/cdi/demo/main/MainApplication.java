@@ -17,6 +17,7 @@ public class MainApplication {
 			 */
 
 			checkout.finishCheckout();
+			checkout.startPlayground();
 		}
 	}
 
